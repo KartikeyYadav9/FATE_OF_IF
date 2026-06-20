@@ -3,7 +3,7 @@ from pygame import mixer
 import sys
 
 mixer.init()
-mixer.music.load("eerie_ambience.mp3")
+mixer.music.load("FATE_OF_IF\Sound/eerie_ambience.mp3")
 mixer.music.play(-1)
 g = "\033[32m"
 r = "\033[0m"
@@ -11,16 +11,16 @@ red = "\033[31m"
 dg = "\033[38;5;34m"
 
 def firing():
-    mixer.Sound("foisal72-gun-fire-346766.mp3").play()
+    mixer.Sound("FATE_OF_IF\Sound/foisal72-gun-fire-346766.mp3").play()
 
 def scream():
-    mixer.Sound("dragon-studio-scream-of-the-zombie-king-353209.mp3").play()
+    mixer.Sound("FATE_OF_IF\Sound/dragon-studio-scream-of-the-zombie-king-353209.mp3").play()
 
 def siren():
-    mixer.Sound("dennish18-military-alarm-129017.mp3").play()
+    mixer.Sound("FATE_OF_IF\Sound\dennish18-military-alarm-129017.mp3").play()
     
 def jumpscare():
-    mixer.Sound("freesound_community-squeaky-jumpscare-2-102254.mp3").play()
+    mixer.Sound("FATE_OF_IF\Sound/freesound_community-squeaky-jumpscare-2-102254.mp3").play()
     
 def dots(duration):
     for i in range(duration):
