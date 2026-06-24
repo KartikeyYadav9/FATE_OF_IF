@@ -5,6 +5,7 @@ import sys
 mixer.init()
 mixer.music.load("Sound/eerie_ambience.mp3")
 mixer.music.play(-1)
+
 g = "\033[32m"
 r = "\033[0m"
 red = "\033[31m"
@@ -27,6 +28,7 @@ def dots(duration):
         sys.stdout.write(".")
         sys.stdout.flush()
         s(1)
+
 def type(text, speed = 0.000000000000000001):
     sys.stdout.write(g)
     for char in text:
@@ -34,6 +36,7 @@ def type(text, speed = 0.000000000000000001):
         sys.stdout.flush()
         s(speed)
     print(r)
+
 def type_faster(text, speed = 0.000000000000000001):
     sys.stdout.write(dg)
     for char in text:
@@ -52,32 +55,49 @@ print(f"{g} ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═════�
 print(f"{g}======================================================================{r}")
 
 s(2)
+
 type("You wake up in a dark room.")
 
 s(1.5)
+
 type("A light bulb is dangling over your head.")
 
 s(1)
+
 type("You are strapped to a metallic chair. You can't move your arms.")
 
 s(3)
+
 type(f"\n[Speaker] : Subject-403 has woken. {red}LINGER STATE{g} terminated. Subject remains non-compliant with baseline identity markers.")
 
 s(3)
+
 type("\nThe heavy pneumatic seal of the chamber door hisses open.\n")
+
 s(5)
+
 type("Three figures step inside, wearing hazmat gear, one checking a datapad that reflects sickening red light in his visor.")
 
 s(2)
+
 type("\n[Speaker 1] to other two : Post-LINGER reconstruction is self-authored. No external imprint detected.")
+
 type("[Speaker 3] : That is not possible!")
+
 s(1)
+
 type("\n*A cacophony arises in the room. The datapad is beeping constantly.*")
+
 s(2)
+
 type("\nThen everything goes quiet.")
+
 s(3)
+
 type("\n[Speaker 2] : Subject-403, do you recognize the chamber as real?")
+
 s(1)
+
 print("""\nWhat do you want to do?
 1. Tell him the truth
 2. Lie to him
@@ -86,120 +106,222 @@ print("""\nWhat do you want to do?
 choice_1 = int(input("Enter your choice(1 or 2 or 3) : "))
 
 if choice_1 == 1:
+
     type("\n[You] : Yes I do.")
+
     s(2)
+
     type("[Speaker 2] : Okay. Maverick, take him to the interrogation room.")
+
     s(1)
+
     type("You are released from the chair.")
+
     s(1)
+
     type("Maverick[Speaker 3] : Okay, come with me")
+
     s(2)
+
     type("\nMaverick puts a handcuff in your hands and you start walking with him.")
+
     dots(3)
+
     type("\nYou leave the room and enter the corridor.")
+
     s(1)
+
     siren()
     firing()
+
     type(f"[Intercom] : {red}Breach detected!{g}")
     type(f"[Intercom] : {red}Breach detected!{g}")
     type(f"[Intercom] : {red}Breach detected!{g}")
+
     s(2)
+
     type("\nMaverick : Hurry Up! We need to get there sooner.")
+
     s(2)
+
     type("\nYou enter the interrogation room along with Maverick.")
+
     type("\nMaverick : Stay here! Don't move. I'll be here in a minute.")
+
     s(2)
+
     type("\nMaverick leaves the room.")
+
     s(1)
+
     print("""\nWhat do you want to do?
 1. Escape
 2. Stay in the room""")
+    
     choice_2 = int(input("Enter your choice(1 or 2) : "))
+
     if choice_2 == 1:
+
         type("\nYou quietly leave the room and enter the corridor.")
+
         s(3)
+
         type("\nYou hide in a box.")
+
         type("You peek through a hole in the box, many soldiers are running in the corridor with their weapons.")
+
         s(1)
+
         type("\nYou come out of the box when they left the corridor.")
+
         s(1)
+
         type("The corridor is dimply lit with red lights flashing at intervals and a loud siren.")
+
         type("You start walking.")
+
         s(3)
+
         type("\nYou enter a room...")
+
         type("The room is full of green cryo chambers.")
+
         type("You start looking at them one by one.")
+
         type("They are filled with abnormal subjects who have unnatural characteristics.")
+
         dots(5)
+
         type("\nYoulook at a creature which has characteristics of both a werewolf and a human")
+
         type(f"\n{red}His bright yellow eyes shot open.{r}")
+
         jumpscare()
+
         type_faster(f"\n{red}He breaks the glass and jumps right in front of you.{r}")
+
         s(2)
+
         print("""What do you wnat to do?
 1. Fight him(Risky)
 2. Run away""")
+        
         choice_3 = int(input("Enter your choice(1 or 2): "))
+
         if choice_3 == 1:
+
             s(1)
+
             type_faster("You take a step back and then jump to deliver him a punch on his face.")
+
             s(2)
+
             type_faster("He lifts you up in the air and throws you towards the wall.")
+
             s(2)
+
             type_faster("You get back on your feet and rush towards him.")
+
             type_faster("He started running towards you as well.")
+
             s(1)
+            
             type_faster("You slide on the floor between his massive legs and instantly turn towards him.")
+
             s(2)
+
             type_faster("You grab a sharp dagger-like piece of broken glass from the ground and stab him on his back.")
+
             scream()
+
             s(3)
+
             type_faster(f"{red}He is bleeding but now he is ENRAGED!{r}")
+
             s(1)
+
             type_faster("He slams you into the ground at incredible speed.")
+
             type_faster("He jumps in the air to land a fatal blow on you that could kill you....")
+
             type_faster("He is about to hit you...")
+
             type_faster("You swipe your dagger in air hopelessly...")
+
             type_faster("It manages to pierce through his left eye and blinds him.")
+
             dots(3)
+
             type_faster("He is now lying on the ground...")
+
             print("""What do you wnat to do?
 1. Hide in the same room.
 2. Run away""")
+            
             choice_4 = int(input("Enter your choice(1 or 2) : "))
+
             if choice_4 == 1:
+
                 type("You rush to hide in a dark corner of a room behind a desk.")
+
                 s(2)
+
                 scream()
+
                 type_faster(f"The {red}werewolf{g} stands back on his feet and screams!!!")
+
                 type_faster("He is running towards you.")
+
                 s(3)
+
                 type_faster("You manage to break the lid of a vent and get inside it.")
+
                 type_faster("You are now crawling to the other opening of the vent")
+
                 dots(5)
+
                 type("You enter a completely new room.")
+
                 type("It is full of desks and computers.")
+
                 s(3)
+
                 type("You go to a computer.")
+
                 type("Opening...")
+
                 s(2)
+
                 type("The computer opens.")
+
                 s(2)
+
                 type("You see a directory which says 'lab server'.")
+
                 type("\nYou open it.")
+
                 dots(3)
+
                 type("Opened directory.")
+
                 s(1)
+
                 type("""It has the record of every subject like-
+                     
 Subject-001
 Subject-002
 subject-003
 .....\n""")
                 type("You scroll down to look for 'Subject-403'")
+
                 type("You click open.")
+
                 type("Opening...")
+
                 s(3)
+
                 type("It opens a whole new window where there are multiple fields with entries filled.")
+
                 type("""The record says- 
 SUBJECT ID        : 403
 STATUS            : Post-Linger
@@ -207,16 +329,24 @@ DATE OF DEATH     : 8 days ago
 CAUSE             : Neural collapse during mutation trial
 """)
                 s(3)
+
                 type("\nYou stare at the screen.")
+
                 s(2)
+
                 type("The file continues...")
+
                 type("""
 BODY STATUS        : Buried
 MEMORY STATUS      : Preserved
 MUTATION           : Semi-success""")
+                
                 s(3)
+
                 type("\nYour heart begins pounding.")
+
                 s(2)
+
                 type("""
 CURRENT ENTITY CLASSIFICATION : Unknown
 ENTITY RECOGNITION RESULT:
@@ -226,12 +356,15 @@ Mutated .......... 32%
 Unidentified ..... 21%""")
                 
                 s(2)
+
                 type(f"""{red}
 WARNING:
 Subject does not fully match any known biological profile.{g}""")
                 
                 type("\nYou scroll further.")
+
                 dots(3)
+
                 type("""
 ORIGINAL NAME       : Elison Frost
 RECOVERY SITE       : North Ridge Forest
@@ -241,149 +374,277 @@ COMPANION ID        : Subject-402
 COMPANION MUTATION  : Successful
 COMPANION CURRENT ENTITY CLASSIFICATION : █████████
 """)
+                
                 s(3)
+
                 type("You realize that you have a companion, and that too alive.")
+
                 type("You begin sweating just at the thought of that idea.")
+
                 s(3)
+
                 type_faster("\nSuddenly, heavy gunfire starts outside the room")
+
                 pass # To be continued
+
     elif choice_2 == 2:
+
         type("You decide to stay in the room.")
+
         s(2)
+
         type("You see a lot of soldiers rushing in corridor with guns through the glass pane in the door...")
+
         s(2)
+
         type("To save yourself, you hide under the desk.")
+
         s(2)
+
         type_faster("[Soldier] : Contact!")
         type_faster("[Soldier] : Contact!")
+
         s(1)
+
         type_faster("[Soldier] : He's in here!")
         type_faster("[Soldier] : Get the damn door open!")
+
         s(1)
+
         type_faster("403! Hands where I can see them!")
         type_faster("[Soldier] : Move and you'll die like a dog!")
 
         s(2)
+
         print("""What do you want to do?
 1. Surrender
 2. Stay hidden""")
+        
         choice_4 = int(input("Enter your choice(1 or 2) : "))
+
         if choice_4 == 1:
+
             s(2)
+            
             mixer.music.fadeout(3000)
+
             s(3)
+
             mixer.music.load("billie_jeans.mp3")
             mixer.music.play(-1)
+
             type("\n You slowly crawl out from beneath the desk.")
+
             s(2)
+            
             type("You raise your hands.")
+
             s(1)
+
             type_faster(f"{red}[Soldier] : SUBJECT SECURED!{r}")
+
             s(2)
+
             type("The soldiers quickly restrain you.")
+
             s(2)
+
             type("You are escorted through the many corridors of lab.")
+
             s(2)
+
             type("The whole lab is in dead silence.")
+
             s(2)
+
             type("You are taken out of lab...")
+
             dots(3)
+
             type("The heavy metal doors open... You are on the top of a snowy hill near North Ridge Forest.")
+
             s(1)
+
             type("You were admiring the amazing view when suddenly you felt sharp pain in your head.")
+
             s(2)
+
             type("It faded away quickly.")
+
             s(2)
+
             type("\nThe soldiers place you in a military helicopter.")
+
             s(2)
+
             type("It takes off...")
+
             dots(3)
+
             type("You leave the hills and reach the military HQ.")
+
             s(3)
+
             type("\nYou never managed to uncover the mysteries...")
+
             s(2)
+
             type("You never learned who Elison Frost was...")
+
             s(1)
+
             type("And much more...")
+
             s(2)
+
             print(f"{red}")
             print("========== ENDING 1 ==========")
             print("  MISSION FAILED SUCCESSFULLY ")
             print("==============================")
             print(f"{r}")
+
             s(3)
+
             type("\n\nMaybe some things weren't meant to be disclosed to you...")
+
         elif choice_4 == 2:
+
             type("You stay hidden under the desk")
+
             s(2)
+
             type("\nOne soldier starts coming towards the desk...")
+
             dots(3)
+
             type("You feel too scared... something you have felt before.")
+
             s(2)
+
             type("\nYou feel a sudden pain in your head on the left side.")
+
             s(1)
+
             type("The pain spreads to your neck")
+
             s(1)
+
             type("Your heartbeat becomes louder.")
+
             s(1)
+
             print(f"{g}Thump.{r}")
+
             s(1)
+
             print(f"{g}Thump.{r}")
+
             s(1)
+
             print(f"{g}Thump.{r}")
+
             s(2)
+
             type("Something is changing...")
+
             s(2)
+            
             type_faster("\nThe pain becomes unbearable.")
+
             s(2)
+
             type_faster("Your vision becomes unbearable.")
+
             s(2)
+
             type("The voices of the soldiers become distorted.")
+
             s(2)
+
             print(f"{g}Thump.{r}")
+
             s(1)
+
             print(f"{g}Thump.{r}")
+
             s(1)
+
             print(f"{g}Thump.{r}")
+
             s(2)
+
             type_faster("Then...")
+
             s(2)
+
             type_faster("You hear something strange.")
+
             s(1)
+
             type_faster("A heartbeat... but not yours!")
+
             s(3)
+
             type_faster("Everyone in the room.")
+
             type_faster("Every footstep in the corridor.")
+
             type_faster("Every breath.")
+
             s(2)
+
             type("You can hear all of them.")
+
             s(2)
+
             type("Perfectly.")
+
             s(2)
+
             type("\nThe soldier reaches the desk.")
+
             dots(3)
+
             s(2)
+
             type_faster(f"{red}[Soldier] : Subject-403 not visible!!!{r}")
+
             s(1)
+
             type_faster(f"{red}[Soldier] : Search every cor...{r}")
+
             jumpscare()
+
             scream()
+
             type_faster(f"{red}Crack...{g}")
+
             type_faster("Something breaks inside your arm.")
+
             type_faster("Your fingers lengthen.")
+
             type_faster("Your legs grow enormously.")
+
             s(2)
+
             type("\nThe soldier looks towards you.")
+
             dots(3)
+
             type_faster(f"{red}[Soldier] : OH GOD!!!!!!!!!{r}")
+
             type_faster("[Soldier] : His arm's changing!")
             type_faster("[Soldier] : Back up! Back up!")
             type_faster("[Soldier] : What the hell is that thing?")
+
             type("The room now feels smaller.")
+
             s(1)
+
             type("You can smell Blood.")
             type("Fear.")
             type("Helplessness.")
+
             s(3)
 
             type_faster(f"{red}[Soldier] : DON'T LET HIM MOVE!{r}")
@@ -393,184 +654,338 @@ COMPANION CURRENT ENTITY CLASSIFICATION : █████████
             firing()
 
             type("The bullets hit your skin.")
+
             s(2)
+
             type("You wait for the pain...")
+
             s(2)
+
             type_faster("But it never comes.")
+
             s(2)
+
             type("The soldiers stop firing.")
+
             s(1)
+
             type_faster("[Soldier] : Impossible...")
+
             s(2)
+
             type("You look down at your body... then look towards them again.")
+
             print("""\n
 What do you want to do?
 1. Attack
 2. Try to control yourself""")
+            
             choice_5 = int(input("Enter your choice(1 or 2) : "))
+
             if choice_5 == 1:
+
                 s(1)
+
                 scream()
+
                 type_faster("You scream from the top of your lungs!")
+
                 s(1)
+
                 type_faster("You are now stronger and... BIGGER.")
+
                 s(1)
+
                 type_faster("You run towards the soldiers.")
+
                 type_faster("You swing your hand in full force.")
+
                 type_faster("Many of them go flying, some lying on the ground fainted")
+
                 s(3)
+
                 type_faster(f"{red}\n[Soldier] : STOP HIM BEFORE HE REACHES SUBJECT-402{r}")
+
                 s(2)
+
                 type("\nA loud ringing sound goes off in your head when you hear that word...")
+
                 s(1)
+
                 type("You are now transitioning back into normal state.")
+
                 dots(3)
+
                 type("You fall on the ground and faint...")
+
                 s(1)
+
                 type("The soldiers put you in some special handcuffs and take you out of the room.")
+
                 dots(5)
+
                 type("You open your eyes in a whole different place, on a bed.")
+
                 s(3)
+
                 type("The ceiling above you is white.")
+
                 s(1)
+
                 type("Sunlight is entering the room through a window on your left side.")
+
                 s(3)
+
                 type("You slowly sit up.")
+
                 s(2)
+
                 type("The room is small.")
+
                 type("A bed.")
                 type("A desk.")
                 type("A chair.")
+
                 s(2)
+
                 type("And a large glass window on your left side.")
+
                 type("And on your right side there is a door... which is open.")
+
                 s(2)
+
                 type("Beyond which stands a single person.")
+
                 dots(3)
+
                 type("A woman.")
                 type("Black coat.")
                 type("Silver eyes.")
                 type("Expressionless.")
+
                 s(2)
+
                 type("[Unknown Woman] : Subject-403,")
+
                 type("[Unknown Woman] : Or should I say...")
+
                 s(2)
+
                 type(f"{red}Elison Frost.{r}")
+
                 s(3)
+
                 type("You suddenly hear that ringing sound again...")
+
                 type("Maybe because the name sounds too familiar.")
+
                 s(2)
+
                 type("[You] : Who are you?")
+
                 type("[Woman] : Director Evelyn.")
+
                 type("[Woman] : Head of FARA")
+
                 s(2)
+
                 type("[You] : What is FARA?")
+
                 s(3)
+                
                 type("[Evelyn] : The reason you are still functioning.")
+
                 s(1)
+
                 type("[You] : Functioning?")
+
                 s(1)
+
                 type("[Evelyn] : According to every medical record available, Elison Frost died 8 days ago.")
+
                 s(2)
+
                 type("[Evelyn] : Yet you are here.")
+
                 s(2)
+
                 type("[Evelyn] : We have not found an explanation.")
+
                 s(2)
+
                 type("[Evelyn] : For 3 years, FARA tracked the organization responsible for the North Ridge Experiments.")
+
                 type("[Evelyn] : Seven facilities.")
                 type("[Evelyn] : Forty-two disappearances.")
                 type("[Evelyn] : Hundreds of classified deaths.")
                 type("[Evelyn] : The laboratory you escaped from was their final active site.")
+
                 s(1)
+
                 type("[Evelyn] : And in our raid, we found you along with 18 other subjects.")
+
                 s(2)
+
                 type("[Evelyn] : You were NOT our primary objective.")
                 type("[Evelyn] : At least... that was true at first.")
+
                 mixer.music.fadeout(3000)
+
                 s(3)
+
                 mixer.music.load("billie_jeans.mp3")
+
                 mixer.music.play(-1)
+
                 type("[Evelyn] : We already extracted everything we needed from you.")
                 type("\n[Evelyn] : The lab is abandoned.")
                 type("[Evelyn] : The organization behind it is gone, atleast for now")
                 type("[Evelyn] : And most importantly, Subject-402 is gone.")
+
                 s(2)
+
                 type("[You] : What?")
+
                 type("[Evelyn] : Your companion. We found him before you, screaming in a cryo lab.")
+
                 s(2)
+
                 type("[You] : What?! Where is he now?")
+
                 type("[Evelyn] : That information is classified.")
+
                 type("[You] : What did you do to him?")
+
                 type("\n[Evelyn] : The same thing we did to you. Tested him")
+
                 s(2)
+
                 type("[Evelyn] : You are free to leave whenever you wish, Elison Frost.")
+
                 type("[Evelyn] : We won't stop you.")
+
                 type("[Evelyn] : We know exactly where you'll go.")
+
                 s(2)
+
                 type("[You] : How?")
+
                 s(1)
+
                 type(f"For the first time director Evelyn smiled.")
+
                 type(f"[Evelyn] : Because...")
+
                 s(3)
+
                 type("She leaves the remove with an eerie smile.")
+
                 s(2)
+
                 type("You pack your stuff and leave the place.")
+
                 s(2)
+
                 print(f"{red}")
                 print("========== ENDING 2 ==========")
                 print("           RELEASED           ")
                 print("==============================")
                 print(f"{r}")
+
                 s(3)
+
                 type("\n\nYou escaped the experiment.")
+
                 type("Or at least...")
+
                 type("You were allowed to.")
+
             if choice_5 == 2:
+
                 type_faster("\nYou close your eyes and focus...")
+
                 type_faster("You force the transformation out.")
+
                 s(2)
+
                 type_faster("You are now slowly detransforming.")
+
                 s(3)
+
                 type_faster("[Commander] : Wait!")
                 type_faster("[Commander] : He's stopping!")
                 type_faster("[Commander] : Hold your fire boys")
+
                 s(1)
+
                 type("You are now back into your original body... but with even more energy.")
+
                 s(2)
+
                 type_faster("[Commander] : Subject-403 is regaining control.")
+
                 type_faster("[Commander] : Repeat, regaining control.")
+
                 s(3)
+
                 type("\Suddenly a gunshot echoes through the room.")
+
                 print("BANG!")
+
                 type_faster("A burning pain erupts in your chest.")
+
                 type_faster("You look down.")
+
                 s(1)
+
                 type_faster("Blood.")
+
                 s(2)
+
                 type_faster("\n[Soldier] : Sir?!")
+
                 type_faster("[Commander] : We don't take chnaces.")
+
                 s(2)
+
                 type("You fall on the ground.")
+
                 s(1)
+
                 type("For a brief moment...")
+
                 type("You see a figure standing at the end of the corridor.")
+
                 type("Yellow Eyes.")
-                type("Watching")
+
+                type("Watching.")
+
                 s(2)
+
                 type("Then darkness.")
+
                 s(3)
+
                 print(f"{red}")
                 print("========== ENDING 3 ==========")
                 print("         TERMINATED           ")
                 print("==============================")
                 print(f"{r}")
+
                 s(2)
+
                 type("\n\nWho was the creature?")
+
 elif choice_1 == 2:
+
     type("\n[You] : NO!")
+
 elif choice_1 == 3:
+
     type("\n[You] : ...")
+
 else:
+
     type("\n[You] : ")
 
 
