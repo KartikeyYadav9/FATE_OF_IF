@@ -192,7 +192,7 @@ if choice_1 == 1:
 
         dots(5)
 
-        type("\nYoulook at a creature which has characteristics of both a werewolf and a human")
+        type("\nYou look at a creature which has characteristics of both a werewolf and a human")
 
         type(f"\n{red}His bright yellow eyes shot open.{r}")
 
@@ -387,6 +387,176 @@ COMPANION CURRENT ENTITY CLASSIFICATION : █████████
 
                 pass # To be continued
 
+            elif choice_4 == 2:
+
+                type_faster("You instantly run towards the door, feeling dizzy.")
+
+                s(2)
+
+                type("You put your hand on the door knob...")
+
+                s(1)
+
+                type_faster("\nYou enter the corridor.")
+
+                type_faster("There is a total chaos in the corridor, soldiers are firing non-stop at the researchers.")
+
+                s(2)
+
+                type("One soldiers looks at you and points his gun towards you.")
+
+                s(1)
+
+                type("Suddenly, the soldier turns pale while looking behind you.")
+
+                s(2)
+                
+                scream()
+
+                type_faster("A deafening roar erupts behind you.")
+
+                type_faster("The creature is back on its feet.")
+
+                s(2)
+
+                type_faster("You don't look back.")
+
+                type_faster("You just run.")
+
+                s(1)
+
+                type_faster("Something slams into the wall behind you.")
+
+                type_faster("\nCloser.")
+
+                type_faster("Closer.")
+
+                type_faster("Closer.\n")
+
+                s(2)
+
+                type_faster("You see a security door ahead.")
+
+                type_faster("You throw yourself through it.")
+
+                s(1)
+
+                type_faster("\nBANG!\n")
+
+                type_faster("You hit the floor.")
+
+                s(2)
+
+                type_faster("The creature lunges after you.")
+
+                firing()
+                firing()
+                firing()
+
+                type_faster("[Soldier] : CONTACT!")
+
+                type_faster("[Soldier] : OPEN FIRE!")
+
+                s(2)
+
+                firing()
+                scream()
+                firing()
+                scream()
+                firing()
+
+                s(2)
+
+                type_faster("The creature collapses.")
+
+                s(3)
+
+                type("\nSilence.\n")
+
+                s(2)
+
+                type("The soldiers grab your arms.")
+
+                type_faster("[Soldier] : We got 403!")
+
+                type_faster("[Soldier] : Secure him!")
+
+                s(2)
+
+                type("You are now in handcuffs.")
+
+                s(1)
+
+                type("They drag you through the corridor.")
+
+                dots(3)
+
+                type("For the first time, you think you might survive.")
+
+                s(2)
+
+                type_faster("Then...")
+
+                type_faster("A gunshot.")
+
+                print(f"\n{g}BANG!{r}\n")
+
+                s(1)
+
+                type_faster("[Soldier] : SNIPER!")
+
+                type_faster("[Soldier] : GET DOWN!")
+
+                s(2)
+
+                type("A scientist steps out from a nearby lab, holding a gun.")
+
+                s(2)
+
+                type_faster("[Scientist] : 403 DOES NOT LEAVE THIS FACILITY!")
+
+                firing()
+                firing()
+
+                type_faster("The soldiers return fire.")
+
+                s(2)
+
+                type("The scientist falls.")
+
+                s(2)
+
+                type("You look down.")
+                
+                s(3)
+
+                type("A bullet has passed straight through your chest.")
+
+                s(1)
+
+                type("The scienists wasn't aiming for the soldiers, he was aiming for you!")
+
+                s(3)
+
+                type("Your vision fades.")
+
+                s(1)
+
+                type("[Scientist] : Subject-402... will find you...")
+
+                s(3)
+
+                print(f"{red}")
+                print("========== ENDING 4 ==========")
+                print("       SILENCED WITNESS       ")
+                print("==============================")
+                print(f"{r}")
+
+                s(2)
+
+                type("""\n\nRecords archived.
+
+Subject status: Unknown.""")
     elif choice_2 == 2:
 
         type("You decide to stay in the room.")
@@ -928,7 +1098,7 @@ What do you want to do?
 
                 s(3)
 
-                type("\Suddenly a gunshot echoes through the room.")
+                type("\nSuddenly, a gunshot echoes through the room.")
 
                 print("BANG!")
 
@@ -944,7 +1114,7 @@ What do you want to do?
 
                 type_faster("\n[Soldier] : Sir?!")
 
-                type_faster("[Commander] : We don't take chnaces.")
+                type_faster("[Commander] : We don't take chances.")
 
                 s(2)
 
