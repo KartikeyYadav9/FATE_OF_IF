@@ -1,9 +1,24 @@
 from time import sleep as s
 from pygame import mixer
 import sys
+import os
+
+
+def get_asset_path(relative_path):
+    
+    try:
+
+        base_path = sys._MEIPASS
+
+    except Exception:
+
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 mixer.init()
-mixer.music.load("Sound/eerie_ambience.mp3")
+music_path = get_asset_path(os.path.join("Sound", "eerie_ambience.mp3"))
+mixer.music.load(music_path)
 mixer.music.play(-1)
 
 g = "\033[32m"
@@ -12,16 +27,20 @@ red = "\033[31m"
 dg = "\033[38;5;34m"
 
 def firing():
-    mixer.Sound("Sound/foisal72-gun-fire-346766.mp3").play()
+    path = get_asset_path(os.path.join("Sound", "foisal72-gun-fire-346766.mp3"))
+    mixer.Sound(path).play()
 
 def scream():
-    mixer.Sound("Sound/dragon-studio-scream-of-the-zombie-king-353209.mp3").play()
+    path = get_asset_path(os.path.join("Sound", "dragon-studio-scream-of-the-zombie-king-353209.mp3"))
+    mixer.Sound(path).play()
 
 def siren():
-    mixer.Sound("Sound/dennish18-military-alarm-129017.mp3").play()
+    path = get_asset_path(os.path.join("Sound", "dennish18-military-alarm-129017.mp3"))
+    mixer.Sound(path).play()
     
 def jumpscare():
-    mixer.Sound("Sound/freesound_community-squeaky-jumpscare-2-102254.mp3").play()
+    path = get_asset_path(os.path.join("Sound", "freesound_community-squeaky-jumpscare-2-102254.mp3"))
+    mixer.Sound(path).play()
     
 def dots(duration):
     for i in range(duration):
@@ -600,7 +619,9 @@ Subject status: Unknown.""")
 
             s(3)
 
-            mixer.music.load("billie_jeans.mp3")
+            billie_path = get_asset_path(os.path.join("Sound", "billie_jeans.mp3"))
+
+            mixer.music.load(billie_path)
             mixer.music.play(-1)
 
             type("\n You slowly crawl out from beneath the desk.")
@@ -1003,8 +1024,9 @@ What do you want to do?
 
                 s(3)
 
-                mixer.music.load("billie_jeans.mp3")
+                billie_path = get_asset_path(os.path.join("Sound", "billie_jeans.mp3"))
 
+                mixer.music.load(billie_path)
                 mixer.music.play(-1)
 
                 type("[Evelyn] : We already extracted everything we needed from you.")
